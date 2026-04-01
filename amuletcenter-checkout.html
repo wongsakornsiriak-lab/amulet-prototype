@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Arm's Blessings</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <a href="amuletcenter-prototype.html" class="logo">
+            <div class="logo-icon">
+              <img src="./logo/amulet_logo-white.png" alt="" />
+            </div>
+            <span class="logo-text">Arm's Blessing</span>
+          </a>
+
+          <nav class="nav">
+            <a href="amuletcenter-prototype.html" class="nav-link">Home</a>
+            <a href="amuletcenter-shop.html" class="nav-link">Sacred Items</a>
+            <a href="#" class="nav-link">Articles</a>
+            <a href="#" class="nav-link">About Us</a>
+            <a href="#" class="nav-link">Contact</a>
+          </nav>
+
+          <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search sacred items..." />
+            <button class="search-btn">&#128269;</button>
+          </div>
+
+          <div class="header-actions">
+            <a href="amuletcenter-cart.html" class="cart-icon">
+              <span>&#128722;</span>
+              <span class="cart-badge">3</span>
+            </a>
+            <a href="#" class="btn btn-primary">Login</a>
+            <button class="mobile-menu-btn" aria-label="Menu">&#9776;</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h1>Checkout</h1>
+        <div class="breadcrumb">
+          <a href="amuletcenter-prototype.html">Home</a>
+          <span>/</span>
+          <a href="amuletcenter-cart.html">Cart</a>
+          <span>/</span>
+          <span>Checkout</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="checkout-layout">
+        <form class="checkout-form">
+          <div class="checkout-section">
+            <h3>Contact Information</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label>First Name <span class="required">*</span></label>
+                <input type="text" class="form-control" placeholder="First name" required />
+              </div>
+              <div class="form-group">
+                <label>Last Name <span class="required">*</span></label>
+                <input type="text" class="form-control" placeholder="Last name" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Email <span class="required">*</span></label>
+                <input type="email" class="form-control" placeholder="Email address" required />
+              </div>
+              <div class="form-group">
+                <label>Phone <span class="required">*</span></label>
+                <input type="tel" class="form-control" placeholder="Phone number" required />
+              </div>
+            </div>
+          </div>
+
+          <div class="checkout-section">
+            <h3>Shipping Address</h3>
+            <div class="form-row full">
+              <div class="form-group">
+                <label>Address <span class="required">*</span></label>
+                <input type="text" class="form-control" placeholder="Street address" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Province <span class="required">*</span></label>
+                <select class="form-control" required>
+                  <option value="">Select province</option>
+                  <option>Bangkok</option>
+                  <option>Chiang Mai</option>
+                  <option>Phuket</option>
+                  <option>Phichit</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>District <span class="required">*</span></label>
+                <input type="text" class="form-control" placeholder="District" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Sub-District</label>
+                <input type="text" class="form-control" placeholder="Sub-district" />
+              </div>
+              <div class="form-group">
+                <label>Postal Code <span class="required">*</span></label>
+                <input type="text" class="form-control" placeholder="Postal code" required />
+              </div>
+            </div>
+            <div class="form-row full">
+              <div class="form-group">
+                <label>Order Notes</label>
+                <textarea class="form-control" placeholder="Notes about your order, e.g. special delivery instructions"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="checkout-section">
+            <h3>Payment Method</h3>
+            <div class="payment-methods-list">
+              <div class="payment-option">
+                <input type="radio" name="payment" id="payment-promptpay" value="promptpay" checked />
+                <label for="payment-promptpay">
+                  <div class="payment-option-icon">QR</div>
+                  <span>PromptPay QR</span>
+                </label>
+              </div>
+              <div class="payment-option">
+                <input type="radio" name="payment" id="payment-bank" value="bank" />
+                <label for="payment-bank">
+                  <div class="payment-option-icon">BANK</div>
+                  <span>Bank Transfer</span>
+                </label>
+              </div>
+              <div class="payment-option">
+                <input type="radio" name="payment" id="payment-card" value="card" />
+                <label for="payment-card">
+                  <div class="payment-option-icon">VISA</div>
+                  <span>Credit/Debit Card</span>
+                </label>
+              </div>
+              <div class="payment-option">
+                <input type="radio" name="payment" id="payment-cod" value="cod" />
+                <label for="payment-cod">
+                  <div class="payment-option-icon">COD</div>
+                  <span>Cash on Delivery</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary place-order-btn">Place Order</button>
+        </form>
+
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+          <div class="order-items">
+            <div class="order-item">
+              <div class="order-item-image">&#9784;</div>
+              <div class="order-item-info">
+                <h4>Luang Phor Ngern 1st Edition Coin</h4>
+                <p>Qty: 1</p>
+              </div>
+              <div class="order-item-price">&#3647;15,900</div>
+            </div>
+            <div class="order-item">
+              <div class="order-item-image">&#9784;</div>
+              <div class="order-item-info">
+                <h4>Phra Somdej Wat Rakang</h4>
+                <p>Qty: 1</p>
+              </div>
+              <div class="order-item-price">&#3647;25,000</div>
+            </div>
+            <div class="order-item">
+              <div class="order-item-image">&#9784;</div>
+              <div class="order-item-info">
+                <h4>Takrut Tone Luang Phor Derm</h4>
+                <p>Qty: 1</p>
+              </div>
+              <div class="order-item-price">&#3647;8,500</div>
+            </div>
+          </div>
+
+          <div class="cart-totals">
+            <div class="cart-total-row">
+              <span>Subtotal</span>
+              <span>&#3647;49,400</span>
+            </div>
+            <div class="cart-total-row">
+              <span>Shipping</span>
+              <span>Free</span>
+            </div>
+            <div class="cart-total-row total">
+              <span>Total</span>
+              <span class="amount">&#3647;49,400</span>
+            </div>
+          </div>
+
+          <div class="product-trust" style="margin-top: 24px;">
+            <div class="product-trust-item">
+              <div class="icon">&#128274;</div>
+              <h4>Secure</h4>
+              <p>SSL encrypted</p>
+            </div>
+            <div class="product-trust-item">
+              <div class="icon">&#10004;</div>
+              <h4>Verified</h4>
+              <p>Authentic items</p>
+            </div>
+            <div class="product-trust-item">
+              <div class="icon">&#128257;</div>
+              <h4>Returns</h4>
+              <p>7-day policy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <div class="logo-icon">&#9784;</div>
+              <span class="logo-text">Arm's Blessings</span>
+            </div>
+            <p>
+              Center for sacred items of merit and prestige, established to
+              provide devotees and the faithful with the opportunity to worship
+              100% authentic sacred items.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link">f</a>
+              <a href="#" class="social-link">t</a>
+              <a href="#" class="social-link">L</a>
+              <a href="#" class="social-link">@</a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h4>Main Menu</h4>
+            <ul class="footer-links">
+              <li><a href="amuletcenter-prototype.html">Home</a></li>
+              <li><a href="amuletcenter-shop.html">Sacred Items</a></li>
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Services</h4>
+            <ul class="footer-links">
+              <li><a href="#">Rent Sacred Items</a></li>
+              <li><a href="#">Authenticity Check</a></li>
+              <li><a href="#">Free Consultation</a></li>
+              <li><a href="#">Nationwide Delivery</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Contact Us</h4>
+            <ul class="footer-links">
+              <li>Tel: 080-356-2895</li>
+              <li>LINE: @armsblessing</li>
+              <li>Email: contact@armsblessing.com</li>
+              <li>Business Hours: 9:00 - 18:00</li>
+            </ul>
+            <a href="#" class="btn btn-primary" style="margin-top: 16px; font-size: 14px; padding: 10px 20px;">Chat on LINE</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Arm's Blessings. All rights reserved.</p>
+          <div class="payment-methods">
+            <div class="payment-icon">VISA</div>
+            <div class="payment-icon">MC</div>
+            <div class="payment-icon">PROMT</div>
+            <div class="payment-icon">BANK</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

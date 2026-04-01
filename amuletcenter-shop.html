@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sacred Items - Arm's Blessings</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <a href="amuletcenter-prototype.html" class="logo">
+            <div class="logo-icon">
+              <img src="./logo/amulet_logo-white.png" alt="" />
+            </div>
+            <span class="logo-text">Arm's Blessing</span>
+          </a>
+
+          <nav class="nav">
+            <a href="amuletcenter-prototype.html" class="nav-link">Home</a>
+            <a href="amuletcenter-shop.html" class="nav-link active">Sacred Items</a>
+            <a href="#" class="nav-link">Articles</a>
+            <a href="#" class="nav-link">About Us</a>
+            <a href="#" class="nav-link">Contact</a>
+          </nav>
+
+          <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search sacred items..." />
+            <button class="search-btn">&#128269;</button>
+          </div>
+
+          <div class="header-actions">
+            <a href="amuletcenter-cart.html" class="cart-icon">
+              <span>&#128722;</span>
+              <span class="cart-badge">3</span>
+            </a>
+            <a href="#" class="btn btn-primary">Login</a>
+            <button class="mobile-menu-btn" aria-label="Menu">&#9776;</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h1>Sacred Items</h1>
+        <div class="breadcrumb">
+          <a href="amuletcenter-prototype.html">Home</a>
+          <span>/</span>
+          <span>Sacred Items</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="shop-layout">
+        <aside class="shop-sidebar">
+          <div class="filter-group">
+            <h4>Category</h4>
+            <div class="filter-option">
+              <input type="checkbox" id="cat-coin" checked />
+              <label for="cat-coin">Coins</label>
+              <span>124</span>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="cat-amulet" checked />
+              <label for="cat-amulet">Amulets</label>
+              <span>89</span>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="cat-takrut" checked />
+              <label for="cat-takrut">Takrut</label>
+              <span>67</span>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="cat-bia" checked />
+              <label for="cat-bia">Bia Gae</label>
+              <span>45</span>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h4>Price Range</h4>
+            <div class="price-range">
+              <input type="number" class="price-input" placeholder="Min" value="0" />
+              <span>-</span>
+              <input type="number" class="price-input" placeholder="Max" value="100000" />
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h4>Temple</h4>
+            <div class="filter-option">
+              <input type="checkbox" id="temple-bang" />
+              <label for="temple-bang">Wat Bang Khlan</label>
+              <span>45</span>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="temple-rakang" />
+              <label for="temple-rakang">Wat Rakang</label>
+              <span>38</span>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="temple-nong" />
+              <label for="temple-nong">Wat Nong Pho</label>
+              <span>27</span>
+            </div>
+          </div>
+
+          <button class="btn btn-primary" style="width: 100%;">Apply Filters</button>
+        </aside>
+
+        <div class="shop-content">
+          <div class="shop-toolbar">
+            <p>Showing 1-12 of 325 items</p>
+            <div class="shop-toolbar-right">
+              <select class="sort-select">
+                <option>Sort by: Popular</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Newest First</option>
+              </select>
+              <div class="view-toggle">
+                <button class="view-btn active">&#9783;</button>
+                <button class="view-btn">&#9776;</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="products-grid">
+            <div class="product-card">
+              <div class="product-image">
+                <span class="product-badge">Popular</span>
+                <button class="product-wishlist">&#9825;</button>
+                &#9784;
+              </div>
+              <div class="product-info">
+                <div class="product-category">Coin</div>
+                <h4 class="product-title">
+                  <a href="amuletcenter-product.html">Luang Phor Ngern 1st Edition Coin, Wat Bang Khlan</a>
+                </h4>
+                <div class="product-price">
+                  <span class="price-current">&#3647;15,900</span>
+                  <span class="price-old">&#3647;18,500</span>
+                </div>
+                <div class="product-actions">
+                  <a href="amuletcenter-cart.html" class="btn btn-primary">Add to Cart</a>
+                  <a href="amuletcenter-product.html" class="btn btn-secondary">&#128065;</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <button class="product-wishlist">&#9825;</button>
+                &#9784;
+              </div>
+              <div class="product-info">
+                <div class="product-category">Amulet</div>
+                <h4 class="product-title">
+                  <a href="amuletcenter-product.html">Phra Somdej Wat Rakang, Large Mold</a>
+                </h4>
+                <div class="product-price">
+                  <span class="price-current">&#3647;25,000</span>
+                </div>
+                <div class="product-actions">
+                  <a href="amuletcenter-cart.html" class="btn btn-primary">Add to Cart</a>
+                  <a href="amuletcenter-product.html" class="btn btn-secondary">&#128065;</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <span class="product-badge">New</span>
+                <button class="product-wishlist">&#9825;</button>
+                &#9784;
+              </div>
+              <div class="product-info">
+                <div class="product-category">Takrut</div>
+                <h4 class="product-title">
+                  <a href="amuletcenter-product.html">Takrut Tone Luang Phor Derm, Wat Nong Pho</a>
+                </h4>
+                <div class="product-price">
+                  <span class="price-current">&#3647;8,500</span>
+                </div>
+                <div class="product-actions">
+                  <a href="amuletcenter-cart.html" class="btn btn-primary">Add to Cart</a>
+                  <a href="amuletcenter-product.html" class="btn btn-secondary">&#128065;</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <button class="product-wishlist">&#9825;</button>
+                &#9784;
+              </div>
+              <div class="product-info">
+                <div class="product-category">Bia Gae</div>
+                <h4 class="product-title">
+                  <a href="amuletcenter-product.html">Bia Gae Luang Pu Rod, Wat Nai Rong</a>
+                </h4>
+                <div class="product-price">
+                  <span class="price-current">&#3647;12,000</span>
+                  <span class="price-old">&#3647;14,500</span>
+                </div>
+                <div class="product-actions">
+                  <a href="amuletcenter-cart.html" class="btn btn-primary">Add to Cart</a>
+                  <a href="amuletcenter-product.html" class="btn btn-secondary">&#128065;</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <button class="product-wishlist">&#9825;</button>
+                &#9784;
+              </div>
+              <div class="product-info">
+                <div class="product-category">Coin</div>
+                <h4 class="product-title">
+                  <a href="amuletcenter-product.html">Phra Pidta Phim Yai, Wat Bang Khlan</a>
+                </h4>
+                <div class="product-price">
+                  <span class="price-current">&#3647;9,500</span>
+                </div>
+                <div class="product-actions">
+                  <a href="amuletcenter-cart.html" class="btn btn-primary">Add to Cart</a>
+                  <a href="amuletcenter-product.html" class="btn btn-secondary">&#128065;</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <span class="product-badge">Sale</span>
+                <button class="product-wishlist">&#9825;</button>
+                &#9784;
+              </div>
+              <div class="product-info">
+                <div class="product-category">Amulet</div>
+                <h4 class="product-title">
+                  <a href="amuletcenter-product.html">Phra Kring Wat Paknam, BE 2500</a>
+                </h4>
+                <div class="product-price">
+                  <span class="price-current">&#3647;35,000</span>
+                  <span class="price-old">&#3647;42,000</span>
+                </div>
+                <div class="product-actions">
+                  <a href="amuletcenter-cart.html" class="btn btn-primary">Add to Cart</a>
+                  <a href="amuletcenter-product.html" class="btn btn-secondary">&#128065;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pagination">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn">&#8594;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <div class="logo-icon">&#9784;</div>
+              <span class="logo-text">Arm's Blessings</span>
+            </div>
+            <p>
+              Center for sacred items of merit and prestige, established to
+              provide devotees and the faithful with the opportunity to worship
+              100% authentic sacred items.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link">f</a>
+              <a href="#" class="social-link">t</a>
+              <a href="#" class="social-link">L</a>
+              <a href="#" class="social-link">@</a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h4>Main Menu</h4>
+            <ul class="footer-links">
+              <li><a href="amuletcenter-prototype.html">Home</a></li>
+              <li><a href="amuletcenter-shop.html">Sacred Items</a></li>
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Services</h4>
+            <ul class="footer-links">
+              <li><a href="#">Rent Sacred Items</a></li>
+              <li><a href="#">Authenticity Check</a></li>
+              <li><a href="#">Free Consultation</a></li>
+              <li><a href="#">Nationwide Delivery</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Contact Us</h4>
+            <ul class="footer-links">
+              <li>Tel: 080-356-2895</li>
+              <li>LINE: @armsblessing</li>
+              <li>Email: contact@armsblessing.com</li>
+              <li>Business Hours: 9:00 - 18:00</li>
+            </ul>
+            <a href="#" class="btn btn-primary" style="margin-top: 16px; font-size: 14px; padding: 10px 20px;">Chat on LINE</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Arm's Blessings. All rights reserved.</p>
+          <div class="payment-methods">
+            <div class="payment-icon">VISA</div>
+            <div class="payment-icon">MC</div>
+            <div class="payment-icon">PROMT</div>
+            <div class="payment-icon">BANK</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
