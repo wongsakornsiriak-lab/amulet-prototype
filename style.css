@@ -5,7 +5,8 @@
     /* Cream/Off-white - backgrounds */
     --color-30-secondary: #120A03;
     /* Dark brown - text, headers */
-    --color-10-accent: #DA8818;
+    /* --color-10-accent: #DA8818; */
+    --color-10-accent: #ce6a01;
     /* Gold/Amber - CTAs, highlights */
 
     /* Typography */
@@ -202,7 +203,7 @@ p {
 .logo-icon {
     width: 48px;
     height: 48px;
-    background: linear-gradient(135deg, var(--color-10-accent), #c57a15);
+    /* background: linear-gradient(135deg, var(--color-10-accent), #e7ddcf); */
     border-radius: 50%;
     display: flex;
     align-items: center;
