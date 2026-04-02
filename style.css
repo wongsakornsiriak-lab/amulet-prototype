@@ -1170,7 +1170,7 @@ p {
 }
 
 .breadcrumb a {
-    color: var(--color-60-primary);
+    color: var(--color-30-primary);
     transition: opacity var(--transition-fast);
 }
 
