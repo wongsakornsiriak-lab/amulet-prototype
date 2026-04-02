@@ -24,10 +24,10 @@
     <header class="header">
       <div class="container">
         <div class="header-inner">
-          <a href="#" class="logo">
-            <!-- <div class="logo-icon">
+          <a href="amuletcenter-prototype.html" class="logo">
+            <div class="logo-icon">
               <img src="./logo/amulet_logo-white.png" alt="" />
-            </div> -->
+            </div>
             <span class="logo-text">Arm's Blessing</span>
           </a>
 
@@ -166,9 +166,7 @@
       <div class="container">
         <div class="section-title">
           <h2>Browse by Category</h2>
-          <p style="color: #666; margin-top: 16px">
-            Find your perfect sacred item
-          </p>
+          <p>Find your perfect sacred item</p>
         </div>
         <div class="categories-grid">
           <a href="amuletcenter-shop.html" class="category-card">
@@ -200,7 +198,7 @@
       <div class="container">
         <div class="section-title">
           <h2>Why Choose Us</h2>
-          <p style="color: #666; margin-top: 16px">What makes us different</p>
+          <p>What makes us different</p>
         </div>
 
         <div class="features-grid">
@@ -237,9 +235,7 @@
         <div class="products-header">
           <div>
             <h2>Recommended Items</h2>
-            <p style="color: #666; margin-top: 8px">
-              Specially selected for you
-            </p>
+            <p>Specially selected for you</p>
           </div>
           <a href="amuletcenter-shop.html" class="btn btn-outline">View All</a>
         </div>
@@ -369,9 +365,7 @@
       <div class="container">
         <div class="section-title">
           <h2>Latest Articles</h2>
-          <p style="color: #666; margin-top: 16px">
-            Good knowledge and tips from us
-          </p>
+          <p>Good knowledge and tips from us</p>
         </div>
 
         <div class="articles-grid">
@@ -428,7 +422,7 @@
           </article>
         </div>
 
-        <div class="text-center" style="margin-top: 48px">
+        <div class="text-center">
           <a href="#" class="btn btn-outline">View All Articles</a>
         </div>
       </div>
@@ -439,9 +433,7 @@
       <div class="container">
         <div class="section-title">
           <h2>Frequently Asked Questions</h2>
-          <p style="color: #666; margin-top: 16px">
-            Everything you need to know
-          </p>
+          <p>Everything you need to know</p>
         </div>
         <div class="faq-list">
           <details class="faq-item">
@@ -503,7 +495,7 @@
       <div class="container">
         <div class="section-title">
           <h2>Customer Reviews</h2>
-          <p style="color: #666; margin-top: 16px">What our customers say</p>
+          <p>What our customers say</p>
         </div>
         <div class="testimonials-grid">
           <div class="testimonial-card">
@@ -657,8 +649,7 @@
             </ul>
             <a
               href="#"
-              class="btn btn-primary"
-              style="margin-top: 16px; font-size: 14px; padding: 10px 20px"
+              class="btn btn-primary btn-sm"
               >Chat on LINE</a
             >
           </div>
@@ -675,5 +666,36 @@
         </div>
       </div>
     </footer>
+
+    <div class="mobile-overlay"></div>
+
+    <script>
+      const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+      const nav = document.querySelector('.nav');
+      const overlay = document.querySelector('.mobile-overlay');
+
+      if (mobileMenuBtn && nav && overlay) {
+        mobileMenuBtn.addEventListener('click', () => {
+          nav.classList.toggle('active');
+          overlay.classList.toggle('active');
+          const icon = mobileMenuBtn.querySelector('i');
+          if (nav.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-xmark');
+          } else {
+            icon.classList.remove('fa-xmark');
+            icon.classList.add('fa-bars');
+          }
+        });
+
+        overlay.addEventListener('click', () => {
+          nav.classList.remove('active');
+          overlay.classList.remove('active');
+          const icon = mobileMenuBtn.querySelector('i');
+          icon.classList.remove('fa-xmark');
+          icon.classList.add('fa-bars');
+        });
+      }
+    </script>
   </body>
 </html>

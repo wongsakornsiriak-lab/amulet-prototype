@@ -257,8 +257,7 @@
             </ul>
             <a
               href="#"
-              class="btn btn-primary"
-              style="margin-top: 16px; font-size: 14px; padding: 10px 20px"
+              class="btn btn-primary btn-sm"
               >Chat on LINE</a
             >
           </div>
@@ -275,5 +274,36 @@
         </div>
       </div>
     </footer>
+
+    <div class="mobile-overlay"></div>
+
+    <script>
+      const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+      const nav = document.querySelector('.nav');
+      const overlay = document.querySelector('.mobile-overlay');
+
+      if (mobileMenuBtn && nav && overlay) {
+        mobileMenuBtn.addEventListener('click', () => {
+          nav.classList.toggle('active');
+          overlay.classList.toggle('active');
+          const icon = mobileMenuBtn.querySelector('i');
+          if (nav.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-xmark');
+          } else {
+            icon.classList.remove('fa-xmark');
+            icon.classList.add('fa-bars');
+          }
+        });
+
+        overlay.addEventListener('click', () => {
+          nav.classList.remove('active');
+          overlay.classList.remove('active');
+          const icon = mobileMenuBtn.querySelector('i');
+          icon.classList.remove('fa-xmark');
+          icon.classList.add('fa-bars');
+        });
+      }
+    </script>
   </body>
 </html>
